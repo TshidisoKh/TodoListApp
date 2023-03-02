@@ -1,0 +1,135 @@
+BUILD_CONFIGURATIONS:
+  Debug: :debug
+  Release: :release
+CACHE_KEYS:
+  Alamofire:
+    BUILD_SETTINGS_CHECKSUM:
+      Alamofire:
+        :debug: 269a8738b16658ac9337015ef4737f58
+        :release: 269a8738b16658ac9337015ef4737f58
+    CHECKSUM: 4e95d97098eacb88856099c4fc79b526a299e48c
+    PROJECT_NAME: Alamofire
+    SPECS:
+      - Alamofire (5.6.4)
+  Cuckoo:
+    BUILD_SETTINGS_CHECKSUM:
+      Cuckoo:
+        :debug: 8abadb019c1b096f86f23556324d37ea
+        :release: 8abadb019c1b096f86f23556324d37ea
+    CHECKSUM: 9e258d68137c411df47c6390f72901d5276b4f03
+    PROJECT_NAME: Cuckoo
+    SPECS:
+      - Cuckoo (1.7.1)
+      - Cuckoo/Swift (1.7.1)
+  JWTDecode:
+    BUILD_SETTINGS_CHECKSUM:
+      JWTDecode:
+        :debug: 586331b9086d2f0bddc782d05b442d3e
+        :release: 586331b9086d2f0bddc782d05b442d3e
+    CHECKSUM: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+    PROJECT_NAME: JWTDecode
+    SPECS:
+      - JWTDecode (2.6.3)
+  lottie-ios:
+    BUILD_SETTINGS_CHECKSUM:
+      lottie-ios:
+        :debug: 1db614b0c786a83e6de6f76136f5ca7e
+        :release: 1db614b0c786a83e6de6f76136f5ca7e
+    CHECKSUM: a50d5c0160425cd4b01b852bb9578963e6d92d31
+    PROJECT_NAME: lottie-ios
+    SPECS:
+      - lottie-ios (2.5.3)
+  OCMock:
+    BUILD_SETTINGS_CHECKSUM:
+      OCMock:
+        :debug: b2bdaee9928e8694bb8be3d13e955d62
+        :release: b2bdaee9928e8694bb8be3d13e955d62
+    CHECKSUM: 2cd0716969bab32a2283ff3a46fd26a8c8b4c5e3
+    PROJECT_NAME: OCMock
+    SPECS:
+      - OCMock (3.4.1)
+  Pods-TodoListApp:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 005519183292fab43c9303708b052bf6
+      Release: 005519183292fab43c9303708b052bf6
+  Pods-TodoListApp-TodoListAppUITests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 9fa680e2717fa5104533f48c9f6fe13a
+      Release: 9fa680e2717fa5104533f48c9f6fe13a
+  Pods-TodoListAppTests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 70b6d6ccda5315eedac2e60caa033ecf
+      Release: 70b6d6ccda5315eedac2e60caa033ecf
+  RxBlocking:
+    BUILD_SETTINGS_CHECKSUM:
+      RxBlocking:
+        :debug: 941e38a386ff328b4360a9727ad8124d
+        :release: 941e38a386ff328b4360a9727ad8124d
+    CHECKSUM: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
+    PROJECT_NAME: RxBlocking
+    SPECS:
+      - RxBlocking (6.5.0)
+  RxCocoa:
+    BUILD_SETTINGS_CHECKSUM:
+      RxCocoa:
+        :debug: cf8555db10ec8bd6bd330495e53b77cd
+        :release: cf8555db10ec8bd6bd330495e53b77cd
+    CHECKSUM: 94f817b71c07517321eb4f9ad299112ca8af743b
+    PROJECT_NAME: RxCocoa
+    SPECS:
+      - RxCocoa (6.5.0)
+  RxRelay:
+    BUILD_SETTINGS_CHECKSUM:
+      RxRelay:
+        :debug: 2d97d4b6bf93a9012ab397e863c3e73c
+        :release: 2d97d4b6bf93a9012ab397e863c3e73c
+    CHECKSUM: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+    PROJECT_NAME: RxRelay
+    SPECS:
+      - RxRelay (6.5.0)
+  RxSwift:
+    BUILD_SETTINGS_CHECKSUM:
+      RxSwift:
+        :debug: f1c3338a82f87f5f6cac6e5812624e20
+        :release: f1c3338a82f87f5f6cac6e5812624e20
+    CHECKSUM: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+    PROJECT_NAME: RxSwift
+    SPECS:
+      - RxSwift (6.5.0)
+  RxTest:
+    BUILD_SETTINGS_CHECKSUM:
+      RxTest:
+        :debug: 56eceb4b810db85f0b4d399eed17da7c
+        :release: 56eceb4b810db85f0b4d399eed17da7c
+    CHECKSUM: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
+    PROJECT_NAME: RxTest
+    SPECS:
+      - RxTest (6.5.0)
+  Swinject:
+    BUILD_SETTINGS_CHECKSUM:
+      Swinject:
+        :debug: c953075b3cc000f02ccbe461b5575987
+        :release: c953075b3cc000f02ccbe461b5575987
+    CHECKSUM: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+    PROJECT_NAME: Swinject
+    SPECS:
+      - Swinject (2.8.3)
+INSTALLATION_OPTIONS:
+  clean: true
+  deduplicate_targets: true
+  deterministic_uuids: true
+  disable_input_output_paths: true
+  generate_multiple_pod_projects: true
+  incremental_installation: true
+  integrate_targets: true
+  lock_pod_sources: true
+  parallel_pod_download_thread_pool_size: 40
+  parallel_pod_downloads: false
+  preserve_pod_file_structure: false
+  share_schemes_for_development_pods: false
+  skip_pods_project_generation: false
+  warn_for_multiple_pod_sources: true
+  warn_for_unused_master_specs_repo: false
+OBJECT_VERSION: 56
+PLUGINS:
+  {}

@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: TodoListApp/Todo List/Cache/TodoListCache.swift at 2023-03-02 12:37:11 +0000
+// MARK: - Mocks generated from file: TodoListApp/Todo List/Cache/TodoListCache.swift at 2023-03-02 13:25:22 +0000
 
 //
 //  TodoListCache.swift
@@ -11,10 +11,6 @@ import Cuckoo
 @testable import TodoListApp
 
 import Foundation
-
-
-
-
 
 
  class MockTodoListCache: TodoListCache, Cuckoo.ProtocolMock {
@@ -42,13 +38,9 @@ import Foundation
     
     
     
-    
      func addTask(task: Task)  {
         
-    return cuckoo_manager.call(
-    """
-    addTask(task: Task)
-    """,
+    return cuckoo_manager.call("addTask(task: Task)",
             parameters: (task),
             escapingParameters: (task),
             superclassCall:
@@ -61,14 +53,9 @@ import Foundation
     
     
     
-    
-    
      func deleteTask(id: Int)  {
         
-    return cuckoo_manager.call(
-    """
-    deleteTask(id: Int)
-    """,
+    return cuckoo_manager.call("deleteTask(id: Int)",
             parameters: (id),
             escapingParameters: (id),
             superclassCall:
@@ -81,14 +68,9 @@ import Foundation
     
     
     
-    
-    
      func editTask(id: Int)  {
         
-    return cuckoo_manager.call(
-    """
-    editTask(id: Int)
-    """,
+    return cuckoo_manager.call("editTask(id: Int)",
             parameters: (id),
             escapingParameters: (id),
             superclassCall:
@@ -101,14 +83,9 @@ import Foundation
     
     
     
-    
-    
      func fetchTask(id: Int) -> Task {
         
-    return cuckoo_manager.call(
-    """
-    fetchTask(id: Int) -> Task
-    """,
+    return cuckoo_manager.call("fetchTask(id: Int) -> Task",
             parameters: (id),
             escapingParameters: (id),
             superclassCall:
@@ -121,14 +98,9 @@ import Foundation
     
     
     
-    
-    
      func fetchTasks() -> [Task] {
         
-    return cuckoo_manager.call(
-    """
-    fetchTasks() -> [Task]
-    """,
+    return cuckoo_manager.call("fetchTasks() -> [Task]",
             parameters: (),
             escapingParameters: (),
             superclassCall:
@@ -139,150 +111,88 @@ import Foundation
         
     }
     
-    
 
-     struct __StubbingProxy_TodoListCache: Cuckoo.StubbingProxy {
-        private let cuckoo_manager: Cuckoo.MockManager
-    
-         init(manager: Cuckoo.MockManager) {
-            self.cuckoo_manager = manager
-        }
-        
-        
-        
-        
-        func addTask<M1: Cuckoo.Matchable>(task: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Task)> where M1.MatchedType == Task {
-            let matchers: [Cuckoo.ParameterMatcher<(Task)>] = [wrap(matchable: task) { $0 }]
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method:
-    """
-    addTask(task: Task)
-    """, parameterMatchers: matchers))
-        }
-        
-        
-        
-        
-        func deleteTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Int)> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method:
-    """
-    deleteTask(id: Int)
-    """, parameterMatchers: matchers))
-        }
-        
-        
-        
-        
-        func editTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Int)> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method:
-    """
-    editTask(id: Int)
-    """, parameterMatchers: matchers))
-        }
-        
-        
-        
-        
-        func fetchTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubFunction<(Int), Task> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method:
-    """
-    fetchTask(id: Int) -> Task
-    """, parameterMatchers: matchers))
-        }
-        
-        
-        
-        
-        func fetchTasks() -> Cuckoo.ProtocolStubFunction<(), [Task]> {
-            let matchers: [Cuckoo.ParameterMatcher<Void>] = []
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method:
-    """
-    fetchTasks() -> [Task]
-    """, parameterMatchers: matchers))
-        }
-        
-        
-    }
+	 struct __StubbingProxy_TodoListCache: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    func addTask<M1: Cuckoo.Matchable>(task: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Task)> where M1.MatchedType == Task {
+	        let matchers: [Cuckoo.ParameterMatcher<(Task)>] = [wrap(matchable: task) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method: "addTask(task: Task)", parameterMatchers: matchers))
+	    }
+	    
+	    func deleteTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Int)> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method: "deleteTask(id: Int)", parameterMatchers: matchers))
+	    }
+	    
+	    func editTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Int)> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method: "editTask(id: Int)", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubFunction<(Int), Task> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method: "fetchTask(id: Int) -> Task", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchTasks() -> Cuckoo.ProtocolStubFunction<(), [Task]> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListCache.self, method: "fetchTasks() -> [Task]", parameterMatchers: matchers))
+	    }
+	    
+	}
 
-     struct __VerificationProxy_TodoListCache: Cuckoo.VerificationProxy {
-        private let cuckoo_manager: Cuckoo.MockManager
-        private let callMatcher: Cuckoo.CallMatcher
-        private let sourceLocation: Cuckoo.SourceLocation
-    
-         init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
-            self.cuckoo_manager = manager
-            self.callMatcher = callMatcher
-            self.sourceLocation = sourceLocation
-        }
-    
-        
-    
-        
-        
-        
-        @discardableResult
-        func addTask<M1: Cuckoo.Matchable>(task: M1) -> Cuckoo.__DoNotUse<(Task), Void> where M1.MatchedType == Task {
-            let matchers: [Cuckoo.ParameterMatcher<(Task)>] = [wrap(matchable: task) { $0 }]
-            return cuckoo_manager.verify(
-    """
-    addTask(task: Task)
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-        
-        
-        @discardableResult
-        func deleteTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Void> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return cuckoo_manager.verify(
-    """
-    deleteTask(id: Int)
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-        
-        
-        @discardableResult
-        func editTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Void> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return cuckoo_manager.verify(
-    """
-    editTask(id: Int)
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-        
-        
-        @discardableResult
-        func fetchTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Task> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return cuckoo_manager.verify(
-    """
-    fetchTask(id: Int) -> Task
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-        
-        
-        @discardableResult
-        func fetchTasks() -> Cuckoo.__DoNotUse<(), [Task]> {
-            let matchers: [Cuckoo.ParameterMatcher<Void>] = []
-            return cuckoo_manager.verify(
-    """
-    fetchTasks() -> [Task]
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-    }
+	 struct __VerificationProxy_TodoListCache: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	
+	    
+	    @discardableResult
+	    func addTask<M1: Cuckoo.Matchable>(task: M1) -> Cuckoo.__DoNotUse<(Task), Void> where M1.MatchedType == Task {
+	        let matchers: [Cuckoo.ParameterMatcher<(Task)>] = [wrap(matchable: task) { $0 }]
+	        return cuckoo_manager.verify("addTask(task: Task)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func deleteTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Void> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return cuckoo_manager.verify("deleteTask(id: Int)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func editTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Void> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return cuckoo_manager.verify("editTask(id: Int)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Task> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return cuckoo_manager.verify("fetchTask(id: Int) -> Task", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchTasks() -> Cuckoo.__DoNotUse<(), [Task]> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return cuckoo_manager.verify("fetchTasks() -> [Task]", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	}
 }
-
 
  class TodoListCacheStub: TodoListCache {
     
@@ -292,12 +202,9 @@ import Foundation
     
     
     
-    
      func addTask(task: Task)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
-    
-    
     
     
     
@@ -307,13 +214,9 @@ import Foundation
     
     
     
-    
-    
      func editTask(id: Int)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
-    
-    
     
     
     
@@ -323,20 +226,14 @@ import Foundation
     
     
     
-    
-    
      func fetchTasks() -> [Task]  {
         return DefaultValueRegistry.defaultValue(for: ([Task]).self)
     }
     
-    
 }
 
 
-
-
-
-// MARK: - Mocks generated from file: TodoListApp/Todo List/Repositories/TodoListRepository.swift at 2023-03-02 12:37:11 +0000
+// MARK: - Mocks generated from file: TodoListApp/Todo List/Repositories/TodoListRepository.swift at 2023-03-02 13:25:22 +0000
 
 //
 //  TodoListRepository.swift
@@ -349,10 +246,6 @@ import Cuckoo
 @testable import TodoListApp
 
 import Foundation
-
-
-
-
 
 
  class MockTodoListRepository: TodoListRepository, Cuckoo.ProtocolMock {
@@ -380,13 +273,9 @@ import Foundation
     
     
     
-    
      func addTask(task: Task)  {
         
-    return cuckoo_manager.call(
-    """
-    addTask(task: Task)
-    """,
+    return cuckoo_manager.call("addTask(task: Task)",
             parameters: (task),
             escapingParameters: (task),
             superclassCall:
@@ -399,14 +288,9 @@ import Foundation
     
     
     
-    
-    
      func deleteTask(id: Int)  {
         
-    return cuckoo_manager.call(
-    """
-    deleteTask(id: Int)
-    """,
+    return cuckoo_manager.call("deleteTask(id: Int)",
             parameters: (id),
             escapingParameters: (id),
             superclassCall:
@@ -419,14 +303,9 @@ import Foundation
     
     
     
-    
-    
      func editTask(id: Int)  {
         
-    return cuckoo_manager.call(
-    """
-    editTask(id: Int)
-    """,
+    return cuckoo_manager.call("editTask(id: Int)",
             parameters: (id),
             escapingParameters: (id),
             superclassCall:
@@ -439,14 +318,9 @@ import Foundation
     
     
     
-    
-    
      func fetchTask(id: Int) -> Task {
         
-    return cuckoo_manager.call(
-    """
-    fetchTask(id: Int) -> Task
-    """,
+    return cuckoo_manager.call("fetchTask(id: Int) -> Task",
             parameters: (id),
             escapingParameters: (id),
             superclassCall:
@@ -459,14 +333,9 @@ import Foundation
     
     
     
-    
-    
      func fetchTasks() -> [Task] {
         
-    return cuckoo_manager.call(
-    """
-    fetchTasks() -> [Task]
-    """,
+    return cuckoo_manager.call("fetchTasks() -> [Task]",
             parameters: (),
             escapingParameters: (),
             superclassCall:
@@ -477,150 +346,88 @@ import Foundation
         
     }
     
-    
 
-     struct __StubbingProxy_TodoListRepository: Cuckoo.StubbingProxy {
-        private let cuckoo_manager: Cuckoo.MockManager
-    
-         init(manager: Cuckoo.MockManager) {
-            self.cuckoo_manager = manager
-        }
-        
-        
-        
-        
-        func addTask<M1: Cuckoo.Matchable>(task: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Task)> where M1.MatchedType == Task {
-            let matchers: [Cuckoo.ParameterMatcher<(Task)>] = [wrap(matchable: task) { $0 }]
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method:
-    """
-    addTask(task: Task)
-    """, parameterMatchers: matchers))
-        }
-        
-        
-        
-        
-        func deleteTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Int)> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method:
-    """
-    deleteTask(id: Int)
-    """, parameterMatchers: matchers))
-        }
-        
-        
-        
-        
-        func editTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Int)> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method:
-    """
-    editTask(id: Int)
-    """, parameterMatchers: matchers))
-        }
-        
-        
-        
-        
-        func fetchTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubFunction<(Int), Task> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method:
-    """
-    fetchTask(id: Int) -> Task
-    """, parameterMatchers: matchers))
-        }
-        
-        
-        
-        
-        func fetchTasks() -> Cuckoo.ProtocolStubFunction<(), [Task]> {
-            let matchers: [Cuckoo.ParameterMatcher<Void>] = []
-            return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method:
-    """
-    fetchTasks() -> [Task]
-    """, parameterMatchers: matchers))
-        }
-        
-        
-    }
+	 struct __StubbingProxy_TodoListRepository: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	     init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    func addTask<M1: Cuckoo.Matchable>(task: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Task)> where M1.MatchedType == Task {
+	        let matchers: [Cuckoo.ParameterMatcher<(Task)>] = [wrap(matchable: task) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method: "addTask(task: Task)", parameterMatchers: matchers))
+	    }
+	    
+	    func deleteTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Int)> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method: "deleteTask(id: Int)", parameterMatchers: matchers))
+	    }
+	    
+	    func editTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(Int)> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method: "editTask(id: Int)", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.ProtocolStubFunction<(Int), Task> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method: "fetchTask(id: Int) -> Task", parameterMatchers: matchers))
+	    }
+	    
+	    func fetchTasks() -> Cuckoo.ProtocolStubFunction<(), [Task]> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return .init(stub: cuckoo_manager.createStub(for: MockTodoListRepository.self, method: "fetchTasks() -> [Task]", parameterMatchers: matchers))
+	    }
+	    
+	}
 
-     struct __VerificationProxy_TodoListRepository: Cuckoo.VerificationProxy {
-        private let cuckoo_manager: Cuckoo.MockManager
-        private let callMatcher: Cuckoo.CallMatcher
-        private let sourceLocation: Cuckoo.SourceLocation
-    
-         init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
-            self.cuckoo_manager = manager
-            self.callMatcher = callMatcher
-            self.sourceLocation = sourceLocation
-        }
-    
-        
-    
-        
-        
-        
-        @discardableResult
-        func addTask<M1: Cuckoo.Matchable>(task: M1) -> Cuckoo.__DoNotUse<(Task), Void> where M1.MatchedType == Task {
-            let matchers: [Cuckoo.ParameterMatcher<(Task)>] = [wrap(matchable: task) { $0 }]
-            return cuckoo_manager.verify(
-    """
-    addTask(task: Task)
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-        
-        
-        @discardableResult
-        func deleteTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Void> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return cuckoo_manager.verify(
-    """
-    deleteTask(id: Int)
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-        
-        
-        @discardableResult
-        func editTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Void> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return cuckoo_manager.verify(
-    """
-    editTask(id: Int)
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-        
-        
-        @discardableResult
-        func fetchTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Task> where M1.MatchedType == Int {
-            let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
-            return cuckoo_manager.verify(
-    """
-    fetchTask(id: Int) -> Task
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-        
-        
-        @discardableResult
-        func fetchTasks() -> Cuckoo.__DoNotUse<(), [Task]> {
-            let matchers: [Cuckoo.ParameterMatcher<Void>] = []
-            return cuckoo_manager.verify(
-    """
-    fetchTasks() -> [Task]
-    """, callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-        }
-        
-        
-    }
+	 struct __VerificationProxy_TodoListRepository: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	     init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	
+	    
+	    @discardableResult
+	    func addTask<M1: Cuckoo.Matchable>(task: M1) -> Cuckoo.__DoNotUse<(Task), Void> where M1.MatchedType == Task {
+	        let matchers: [Cuckoo.ParameterMatcher<(Task)>] = [wrap(matchable: task) { $0 }]
+	        return cuckoo_manager.verify("addTask(task: Task)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func deleteTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Void> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return cuckoo_manager.verify("deleteTask(id: Int)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func editTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Void> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return cuckoo_manager.verify("editTask(id: Int)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchTask<M1: Cuckoo.Matchable>(id: M1) -> Cuckoo.__DoNotUse<(Int), Task> where M1.MatchedType == Int {
+	        let matchers: [Cuckoo.ParameterMatcher<(Int)>] = [wrap(matchable: id) { $0 }]
+	        return cuckoo_manager.verify("fetchTask(id: Int) -> Task", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	    @discardableResult
+	    func fetchTasks() -> Cuckoo.__DoNotUse<(), [Task]> {
+	        let matchers: [Cuckoo.ParameterMatcher<Void>] = []
+	        return cuckoo_manager.verify("fetchTasks() -> [Task]", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	}
 }
-
 
  class TodoListRepositoryStub: TodoListRepository {
     
@@ -630,12 +437,9 @@ import Foundation
     
     
     
-    
      func addTask(task: Task)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
-    
-    
     
     
     
@@ -645,13 +449,9 @@ import Foundation
     
     
     
-    
-    
      func editTask(id: Int)   {
         return DefaultValueRegistry.defaultValue(for: (Void).self)
     }
-    
-    
     
     
     
@@ -661,15 +461,9 @@ import Foundation
     
     
     
-    
-    
      func fetchTasks() -> [Task]  {
         return DefaultValueRegistry.defaultValue(for: ([Task]).self)
     }
     
-    
 }
-
-
-
 
