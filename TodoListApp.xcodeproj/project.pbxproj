@@ -16,6 +16,9 @@
 		C3BFC41429AD276B0071F73A /* TodoListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFC41329AD276B0071F73A /* TodoListAppTests.swift */; };
 		C3BFC41E29AD276B0071F73A /* TodoListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFC41D29AD276B0071F73A /* TodoListAppUITests.swift */; };
 		C3BFC42029AD276B0071F73A /* TodoListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFC41F29AD276B0071F73A /* TodoListAppUITestsLaunchTests.swift */; };
+		C3CEEAB729B60A0700E97A44 /* GenerateCuckooMocks.sh in Resources */ = {isa = PBXBuildFile; fileRef = C3CEEAB629B60A0700E97A44 /* GenerateCuckooMocks.sh */; };
+		C3CEEAFA29B60AFF00E97A44 /* DemoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEEAF929B60AFF00E97A44 /* DemoRepository.swift */; };
+		C3CEEAFC29B60B5D00E97A44 /* GenerateCuckooMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEEAFB29B60B5D00E97A44 /* GenerateCuckooMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C3BFC41929AD276B0071F73A /* TodoListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFC41D29AD276B0071F73A /* TodoListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListAppUITests.swift; sourceTree = "<group>"; };
 		C3BFC41F29AD276B0071F73A /* TodoListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3CEEAB629B60A0700E97A44 /* GenerateCuckooMocks.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = GenerateCuckooMocks.sh; sourceTree = "<group>"; };
+		C3CEEAF929B60AFF00E97A44 /* DemoRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoRepository.swift; sourceTree = "<group>"; };
+		C3CEEAFB29B60B5D00E97A44 /* GenerateCuckooMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCuckooMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +82,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4983AEF3570329FBF32B9F38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C3BFC3F029AD27670071F73A = {
 			isa = PBXGroup;
 			children = (
+				C3CEEAF929B60AFF00E97A44 /* DemoRepository.swift */,
 				C3BFC3FB29AD27680071F73A /* TodoListApp */,
 				C3BFC41229AD276B0071F73A /* TodoListAppTests */,
 				C3BFC41C29AD276B0071F73A /* TodoListAppUITests */,
 				C3BFC3FA29AD27680071F73A /* Products */,
+				4983AEF3570329FBF32B9F38 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +129,8 @@
 		C3BFC41229AD276B0071F73A /* TodoListAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3CEEAFB29B60B5D00E97A44 /* GenerateCuckooMocks.swift */,
+				C3CEEAB629B60A0700E97A44 /* GenerateCuckooMocks.sh */,
 				C3BFC41329AD276B0071F73A /* TodoListAppTests.swift */,
 			);
 			path = TodoListAppTests;
@@ -199,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3BFC42629AD276B0071F73A /* Build configuration list for PBXNativeTarget "TodoListAppTests" */;
 			buildPhases = (
+				C3CEEAF829B60A8700E97A44 /* ShellScript */,
 				C3BFC40B29AD276B0071F73A /* Sources */,
 				C3BFC40C29AD276B0071F73A /* Frameworks */,
 				C3BFC40D29AD276B0071F73A /* Resources */,
@@ -289,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CEEAB729B60A0700E97A44 /* GenerateCuckooMocks.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,11 +320,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C3CEEAF829B60A8700E97A44 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n$SRCROOT/TodoListAppTests/GenerateCuckooMocks.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3BFC3F529AD27670071F73A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CEEAFA29B60AFF00E97A44 /* DemoRepository.swift in Sources */,
 				C3BFC40129AD27680071F73A /* ViewController.swift in Sources */,
 				C3BFC3FD29AD27680071F73A /* AppDelegate.swift in Sources */,
 				C3BFC3FF29AD27680071F73A /* SceneDelegate.swift in Sources */,
@@ -316,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CEEAFC29B60B5D00E97A44 /* GenerateCuckooMocks.swift in Sources */,
 				C3BFC41429AD276B0071F73A /* TodoListAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
