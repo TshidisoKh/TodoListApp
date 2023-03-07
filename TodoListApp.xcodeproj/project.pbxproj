@@ -26,6 +26,18 @@
 		C3D5498429B712930028F5FB /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498329B712930028F5FB /* DailyWeather.swift */; };
 		C3D5498629B712BF0028F5FB /* HourlyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498529B712BF0028F5FB /* HourlyWeather.swift */; };
 		C3D5498829B712E60028F5FB /* HourlyWeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498729B712E60028F5FB /* HourlyWeatherEntry.swift */; };
+		C3D54A9029B76EB50028F5FB /* TodoListRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A8F29B76EB50028F5FB /* TodoListRepositoryTests.swift */; };
+		C3D54AA429B76EE30028F5FB /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9329B76EE30028F5FB /* TodoListViewModel.swift */; };
+		C3D54AA529B76EE30028F5FB /* TodoListCacheImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9529B76EE30028F5FB /* TodoListCacheImplementation.swift */; };
+		C3D54AA629B76EE30028F5FB /* TodoListCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9629B76EE30028F5FB /* TodoListCache.swift */; };
+		C3D54AA729B76EE30028F5FB /* TodoListRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9829B76EE30028F5FB /* TodoListRepositoryImplementation.swift */; };
+		C3D54AA829B76EE30028F5FB /* TodoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9929B76EE30028F5FB /* TodoListRepository.swift */; };
+		C3D54AA929B76EE30028F5FB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9B29B76EE30028F5FB /* Task.swift */; };
+		C3D54AAA29B76EE30028F5FB /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9D29B76EE30028F5FB /* TodoListViewController.swift */; };
+		C3D54AAB29B76EE30028F5FB /* TodoListCacheInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9F29B76EE30028F5FB /* TodoListCacheInjectable.swift */; };
+		C3D54AAC29B76EE30028F5FB /* TodoListRepositoryInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AA029B76EE30028F5FB /* TodoListRepositoryInjectable.swift */; };
+		C3D54AAD29B76EE30028F5FB /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D54AA229B76EE30028F5FB /* TodoList.storyboard */; };
+		C3D54AAE29B76EE30028F5FB /* TodoListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AA329B76EE30028F5FB /* TodoListModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +81,18 @@
 		C3D5498329B712930028F5FB /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
 		C3D5498529B712BF0028F5FB /* HourlyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeather.swift; sourceTree = "<group>"; };
 		C3D5498729B712E60028F5FB /* HourlyWeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherEntry.swift; sourceTree = "<group>"; };
+		C3D54A8F29B76EB50028F5FB /* TodoListRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListRepositoryTests.swift; sourceTree = "<group>"; };
+		C3D54A9329B76EE30028F5FB /* TodoListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+		C3D54A9529B76EE30028F5FB /* TodoListCacheImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListCacheImplementation.swift; sourceTree = "<group>"; };
+		C3D54A9629B76EE30028F5FB /* TodoListCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListCache.swift; sourceTree = "<group>"; };
+		C3D54A9829B76EE30028F5FB /* TodoListRepositoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListRepositoryImplementation.swift; sourceTree = "<group>"; };
+		C3D54A9929B76EE30028F5FB /* TodoListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListRepository.swift; sourceTree = "<group>"; };
+		C3D54A9B29B76EE30028F5FB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C3D54A9D29B76EE30028F5FB /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		C3D54A9F29B76EE30028F5FB /* TodoListCacheInjectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListCacheInjectable.swift; sourceTree = "<group>"; };
+		C3D54AA029B76EE30028F5FB /* TodoListRepositoryInjectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListRepositoryInjectable.swift; sourceTree = "<group>"; };
+		C3D54AA229B76EE30028F5FB /* TodoList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
+		C3D54AA329B76EE30028F5FB /* TodoListModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +152,9 @@
 		C3BFC3FB29AD27680071F73A /* TodoListApp */ = {
 			isa = PBXGroup;
 			children = (
+				C3D54A9129B76EE30028F5FB /* TodoList */,
+				C3D54AA329B76EE30028F5FB /* TodoListModule.swift */,
 				C3D5495729B6FCA90028F5FB /* Weather */,
-				C3BFC42C29AD49250071F73A /* Todo List */,
 				C3BFC3FC29AD27680071F73A /* AppDelegate.swift */,
 				C3BFC3FE29AD27680071F73A /* SceneDelegate.swift */,
 				C3BFC40029AD27680071F73A /* ViewController.swift */,
@@ -144,6 +169,7 @@
 		C3BFC41229AD276B0071F73A /* TodoListAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3D54A8D29B76EB50028F5FB /* TodoList */,
 				C3CEEAFB29B60B5D00E97A44 /* GenerateCuckooMocks.swift */,
 				C3CEEAB629B60A0700E97A44 /* GenerateCuckooMocks.sh */,
 				C3BFC41329AD276B0071F73A /* TodoListAppTests.swift */,
@@ -158,53 +184,6 @@
 				C3BFC41F29AD276B0071F73A /* TodoListAppUITestsLaunchTests.swift */,
 			);
 			path = TodoListAppUITests;
-			sourceTree = "<group>";
-		};
-		C3BFC42C29AD49250071F73A /* Todo List */ = {
-			isa = PBXGroup;
-			children = (
-				C3BFC43129AD49EF0071F73A /* Models */,
-				C3BFC43029AD49A50071F73A /* Repositories */,
-				C3BFC42F29AD49830071F73A /* Controllers */,
-				C3BFC42E29AD496C0071F73A /* ViewModels */,
-				C3BFC42D29AD49470071F73A /* Services */,
-			);
-			path = "Todo List";
-			sourceTree = "<group>";
-		};
-		C3BFC42D29AD49470071F73A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		C3BFC42E29AD496C0071F73A /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		C3BFC42F29AD49830071F73A /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		C3BFC43029AD49A50071F73A /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		C3BFC43129AD49EF0071F73A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		C3D5495729B6FCA90028F5FB /* Weather */ = {
@@ -227,6 +206,95 @@
 				C3D5498729B712E60028F5FB /* HourlyWeatherEntry.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C3D54A8D29B76EB50028F5FB /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A8E29B76EB50028F5FB /* Repositories */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		C3D54A8E29B76EB50028F5FB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A8F29B76EB50028F5FB /* TodoListRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C3D54A9129B76EE30028F5FB /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A9229B76EE30028F5FB /* ViewModels */,
+				C3D54A9429B76EE30028F5FB /* Cache */,
+				C3D54A9729B76EE30028F5FB /* Repositories */,
+				C3D54A9A29B76EE30028F5FB /* Models */,
+				C3D54A9C29B76EE30028F5FB /* ViewControllers */,
+				C3D54A9E29B76EE30028F5FB /* Dependency Injection */,
+				C3D54AA129B76EE30028F5FB /* Presentation */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		C3D54A9229B76EE30028F5FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A9329B76EE30028F5FB /* TodoListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C3D54A9429B76EE30028F5FB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A9529B76EE30028F5FB /* TodoListCacheImplementation.swift */,
+				C3D54A9629B76EE30028F5FB /* TodoListCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		C3D54A9729B76EE30028F5FB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A9829B76EE30028F5FB /* TodoListRepositoryImplementation.swift */,
+				C3D54A9929B76EE30028F5FB /* TodoListRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C3D54A9A29B76EE30028F5FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A9B29B76EE30028F5FB /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3D54A9C29B76EE30028F5FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A9D29B76EE30028F5FB /* TodoListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3D54A9E29B76EE30028F5FB /* Dependency Injection */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54A9F29B76EE30028F5FB /* TodoListCacheInjectable.swift */,
+				C3D54AA029B76EE30028F5FB /* TodoListRepositoryInjectable.swift */,
+			);
+			path = "Dependency Injection";
+			sourceTree = "<group>";
+		};
+		C3D54AA129B76EE30028F5FB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54AA229B76EE30028F5FB /* TodoList.storyboard */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D54AAD29B76EE30028F5FB /* TodoList.storyboard in Resources */,
 				C3BFC40929AD276B0071F73A /* LaunchScreen.storyboard in Resources */,
 				C3BFC40629AD276A0071F73A /* Assets.xcassets in Resources */,
 				C3BFC40429AD27680071F73A /* Main.storyboard in Resources */,
@@ -386,13 +455,23 @@
 				C3D5495C29B6FDA90028F5FB /* WeatherResponse.swift in Sources */,
 				C3BFC40129AD27680071F73A /* ViewController.swift in Sources */,
 				C3D5498629B712BF0028F5FB /* HourlyWeather.swift in Sources */,
+				C3D54AA429B76EE30028F5FB /* TodoListViewModel.swift in Sources */,
+				C3D54AA829B76EE30028F5FB /* TodoListRepository.swift in Sources */,
+				C3D54AAA29B76EE30028F5FB /* TodoListViewController.swift in Sources */,
 				C3D5498029B712460028F5FB /* CurrentWeather.swift in Sources */,
 				C3BFC3FD29AD27680071F73A /* AppDelegate.swift in Sources */,
 				C3D5495E29B70CC50028F5FB /* NetworkHelper.swift in Sources */,
 				C3BFC3FF29AD27680071F73A /* SceneDelegate.swift in Sources */,
 				C3D5498829B712E60028F5FB /* HourlyWeatherEntry.swift in Sources */,
+				C3D54AA629B76EE30028F5FB /* TodoListCache.swift in Sources */,
+				C3D54AAB29B76EE30028F5FB /* TodoListCacheInjectable.swift in Sources */,
 				C3D5498229B712680028F5FB /* DailyWeatherEntry.swift in Sources */,
 				C3D5498429B712930028F5FB /* DailyWeather.swift in Sources */,
+				C3D54AAC29B76EE30028F5FB /* TodoListRepositoryInjectable.swift in Sources */,
+				C3D54AAE29B76EE30028F5FB /* TodoListModule.swift in Sources */,
+				C3D54AA729B76EE30028F5FB /* TodoListRepositoryImplementation.swift in Sources */,
+				C3D54AA929B76EE30028F5FB /* Task.swift in Sources */,
+				C3D54AA529B76EE30028F5FB /* TodoListCacheImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +481,7 @@
 			files = (
 				C3CEEAFC29B60B5D00E97A44 /* GenerateCuckooMocks.swift in Sources */,
 				C3BFC41429AD276B0071F73A /* TodoListAppTests.swift in Sources */,
+				C3D54A9029B76EB50028F5FB /* TodoListRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

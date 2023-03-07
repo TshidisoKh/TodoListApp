@@ -11,6 +11,8 @@ echo "Mocks Input Directory = $INPUT_DIR"
 # Please add "$INPUT_DIR/$(find . -name SWIFTFILENAME.swift) below to be mocked out
 ${PODS_ROOT}/Cuckoo/run generate --testable "TodoListApp" \
 --output "${OUTPUT_FILE}" \
- "$INPUT_DIR/$(find . -name DemoRepository.swift)"
+ "$INPUT_DIR/$(find . -name DemoRepository.swift)"\
+ "$INPUT_DIR/$(find . -name TodoListCache.swift)"\
+ "$INPUT_DIR/$(find . -name TodoListRepository.swift)"
 
 echo "End GenerateWealthFeaturesCuckooMocks.sh"
