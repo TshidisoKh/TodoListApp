@@ -7,12 +7,19 @@
 
 import Foundation
 
-struct WeatherResponse: Codable {
-    let latitude: Float
-    let longitude: Float
-    let timezone: String
-    let currently: CurrentWeather
-    let hourly: HourlyWeather
-    let daily: DailyWeather
-    let offset: Float
+struct WeatherDataModel: Decodable {
+    let clouds: Clouds
+    let cod: Int
+    let coord: Coord
+    let dt: Int
+    let id: Int
+    let main: Main
+    let name: String
+    let sys: Sys
+    let visibility: Int
+    let weather: [Weather]
+    let wind: Wind
 }
+
+
+

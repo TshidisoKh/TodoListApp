@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34B80B529B9DCB9009B8052 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B80B429B9DCB9009B8052 /* Wind.swift */; };
+		C34B80B929BA0448009B8052 /* WeatherRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B80B829BA0448009B8052 /* WeatherRepositoryTests.swift */; };
 		C3BFC3FD29AD27680071F73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFC3FC29AD27680071F73A /* AppDelegate.swift */; };
 		C3BFC3FF29AD27680071F73A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFC3FE29AD27680071F73A /* SceneDelegate.swift */; };
 		C3BFC40129AD27680071F73A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFC40029AD27680071F73A /* ViewController.swift */; };
@@ -21,11 +23,11 @@
 		C3CEEAFC29B60B5D00E97A44 /* GenerateCuckooMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CEEAFB29B60B5D00E97A44 /* GenerateCuckooMocks.swift */; };
 		C3D5495C29B6FDA90028F5FB /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5495B29B6FDA90028F5FB /* WeatherResponse.swift */; };
 		C3D5495E29B70CC50028F5FB /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5495D29B70CC50028F5FB /* NetworkHelper.swift */; };
-		C3D5498029B712460028F5FB /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5497F29B712460028F5FB /* CurrentWeather.swift */; };
-		C3D5498229B712680028F5FB /* DailyWeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498129B712680028F5FB /* DailyWeatherEntry.swift */; };
-		C3D5498429B712930028F5FB /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498329B712930028F5FB /* DailyWeather.swift */; };
-		C3D5498629B712BF0028F5FB /* HourlyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498529B712BF0028F5FB /* HourlyWeather.swift */; };
-		C3D5498829B712E60028F5FB /* HourlyWeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498729B712E60028F5FB /* HourlyWeatherEntry.swift */; };
+		C3D5498029B712460028F5FB /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5497F29B712460028F5FB /* Clouds.swift */; };
+		C3D5498229B712680028F5FB /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498129B712680028F5FB /* Coord.swift */; };
+		C3D5498429B712930028F5FB /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498329B712930028F5FB /* Main.swift */; };
+		C3D5498629B712BF0028F5FB /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498529B712BF0028F5FB /* Sys.swift */; };
+		C3D5498829B712E60028F5FB /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D5498729B712E60028F5FB /* Weather.swift */; };
 		C3D54A9029B76EB50028F5FB /* TodoListRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A8F29B76EB50028F5FB /* TodoListRepositoryTests.swift */; };
 		C3D54AA429B76EE30028F5FB /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9329B76EE30028F5FB /* TodoListViewModel.swift */; };
 		C3D54AA529B76EE30028F5FB /* TodoListCacheImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54A9529B76EE30028F5FB /* TodoListCacheImplementation.swift */; };
@@ -38,6 +40,10 @@
 		C3D54AAC29B76EE30028F5FB /* TodoListRepositoryInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AA029B76EE30028F5FB /* TodoListRepositoryInjectable.swift */; };
 		C3D54AAD29B76EE30028F5FB /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D54AA229B76EE30028F5FB /* TodoList.storyboard */; };
 		C3D54AAE29B76EE30028F5FB /* TodoListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AA329B76EE30028F5FB /* TodoListModule.swift */; };
+		C3D54AD129B9A6F40028F5FB /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD029B9A6F40028F5FB /* WeatherService.swift */; };
+		C3D54AD329B9A71B0028F5FB /* WeatherServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD229B9A71B0028F5FB /* WeatherServiceImplementation.swift */; };
+		C3D54AD629B9A74E0028F5FB /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD529B9A74E0028F5FB /* WeatherRepository.swift */; };
+		C3D54AD829B9A7710028F5FB /* WeatherRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C34B80B429B9DCB9009B8052 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		C34B80B829BA0448009B8052 /* WeatherRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryTests.swift; sourceTree = "<group>"; };
 		C3BFC3F929AD27680071F73A /* TodoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3BFC3FC29AD27680071F73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3BFC3FE29AD27680071F73A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,11 +84,11 @@
 		C3CEEAFB29B60B5D00E97A44 /* GenerateCuckooMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateCuckooMocks.swift; sourceTree = "<group>"; };
 		C3D5495B29B6FDA90028F5FB /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		C3D5495D29B70CC50028F5FB /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
-		C3D5497F29B712460028F5FB /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
-		C3D5498129B712680028F5FB /* DailyWeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherEntry.swift; sourceTree = "<group>"; };
-		C3D5498329B712930028F5FB /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
-		C3D5498529B712BF0028F5FB /* HourlyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeather.swift; sourceTree = "<group>"; };
-		C3D5498729B712E60028F5FB /* HourlyWeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherEntry.swift; sourceTree = "<group>"; };
+		C3D5497F29B712460028F5FB /* Clouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
+		C3D5498129B712680028F5FB /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
+		C3D5498329B712930028F5FB /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		C3D5498529B712BF0028F5FB /* Sys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
+		C3D5498729B712E60028F5FB /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		C3D54A8F29B76EB50028F5FB /* TodoListRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListRepositoryTests.swift; sourceTree = "<group>"; };
 		C3D54A9329B76EE30028F5FB /* TodoListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		C3D54A9529B76EE30028F5FB /* TodoListCacheImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListCacheImplementation.swift; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 		C3D54AA029B76EE30028F5FB /* TodoListRepositoryInjectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListRepositoryInjectable.swift; sourceTree = "<group>"; };
 		C3D54AA229B76EE30028F5FB /* TodoList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
 		C3D54AA329B76EE30028F5FB /* TodoListModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListModule.swift; sourceTree = "<group>"; };
+		C3D54AD029B9A6F40028F5FB /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		C3D54AD229B9A71B0028F5FB /* WeatherServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceImplementation.swift; sourceTree = "<group>"; };
+		C3D54AD529B9A74E0028F5FB /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,22 @@
 			children = (
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C34B80B629BA03FF009B8052 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				C34B80B729BA040D009B8052 /* Repositories */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		C34B80B729BA040D009B8052 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C34B80B829BA0448009B8052 /* WeatherRepositoryTests.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		C3BFC3F029AD27670071F73A = {
@@ -169,6 +197,7 @@
 		C3BFC41229AD276B0071F73A /* TodoListAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				C34B80B629BA03FF009B8052 /* Weather */,
 				C3D54A8D29B76EB50028F5FB /* TodoList */,
 				C3CEEAFB29B60B5D00E97A44 /* GenerateCuckooMocks.swift */,
 				C3CEEAB629B60A0700E97A44 /* GenerateCuckooMocks.sh */,
@@ -189,6 +218,8 @@
 		C3D5495729B6FCA90028F5FB /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				C3D54AD429B9A7250028F5FB /* Repository */,
+				C3D54ACF29B9A6C60028F5FB /* Services */,
 				C3D5495829B6FD010028F5FB /* Models */,
 			);
 			path = Weather;
@@ -199,11 +230,12 @@
 			children = (
 				C3D5495B29B6FDA90028F5FB /* WeatherResponse.swift */,
 				C3D5495D29B70CC50028F5FB /* NetworkHelper.swift */,
-				C3D5497F29B712460028F5FB /* CurrentWeather.swift */,
-				C3D5498129B712680028F5FB /* DailyWeatherEntry.swift */,
-				C3D5498329B712930028F5FB /* DailyWeather.swift */,
-				C3D5498529B712BF0028F5FB /* HourlyWeather.swift */,
-				C3D5498729B712E60028F5FB /* HourlyWeatherEntry.swift */,
+				C3D5497F29B712460028F5FB /* Clouds.swift */,
+				C3D5498129B712680028F5FB /* Coord.swift */,
+				C3D5498329B712930028F5FB /* Main.swift */,
+				C3D5498529B712BF0028F5FB /* Sys.swift */,
+				C3D5498729B712E60028F5FB /* Weather.swift */,
+				C34B80B429B9DCB9009B8052 /* Wind.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,6 +327,24 @@
 				C3D54AA229B76EE30028F5FB /* TodoList.storyboard */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C3D54ACF29B9A6C60028F5FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54AD029B9A6F40028F5FB /* WeatherService.swift */,
+				C3D54AD229B9A71B0028F5FB /* WeatherServiceImplementation.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C3D54AD429B9A7250028F5FB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C3D54AD529B9A74E0028F5FB /* WeatherRepository.swift */,
+				C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,25 +503,30 @@
 			files = (
 				C3CEEAFA29B60AFF00E97A44 /* DemoRepository.swift in Sources */,
 				C3D5495C29B6FDA90028F5FB /* WeatherResponse.swift in Sources */,
+				C3D54AD329B9A71B0028F5FB /* WeatherServiceImplementation.swift in Sources */,
+				C3D54AD129B9A6F40028F5FB /* WeatherService.swift in Sources */,
 				C3BFC40129AD27680071F73A /* ViewController.swift in Sources */,
-				C3D5498629B712BF0028F5FB /* HourlyWeather.swift in Sources */,
+				C3D5498629B712BF0028F5FB /* Sys.swift in Sources */,
 				C3D54AA429B76EE30028F5FB /* TodoListViewModel.swift in Sources */,
 				C3D54AA829B76EE30028F5FB /* TodoListRepository.swift in Sources */,
 				C3D54AAA29B76EE30028F5FB /* TodoListViewController.swift in Sources */,
-				C3D5498029B712460028F5FB /* CurrentWeather.swift in Sources */,
+				C3D5498029B712460028F5FB /* Clouds.swift in Sources */,
 				C3BFC3FD29AD27680071F73A /* AppDelegate.swift in Sources */,
 				C3D5495E29B70CC50028F5FB /* NetworkHelper.swift in Sources */,
 				C3BFC3FF29AD27680071F73A /* SceneDelegate.swift in Sources */,
-				C3D5498829B712E60028F5FB /* HourlyWeatherEntry.swift in Sources */,
+				C3D5498829B712E60028F5FB /* Weather.swift in Sources */,
 				C3D54AA629B76EE30028F5FB /* TodoListCache.swift in Sources */,
 				C3D54AAB29B76EE30028F5FB /* TodoListCacheInjectable.swift in Sources */,
-				C3D5498229B712680028F5FB /* DailyWeatherEntry.swift in Sources */,
-				C3D5498429B712930028F5FB /* DailyWeather.swift in Sources */,
+				C3D5498229B712680028F5FB /* Coord.swift in Sources */,
+				C3D5498429B712930028F5FB /* Main.swift in Sources */,
+				C3D54AD629B9A74E0028F5FB /* WeatherRepository.swift in Sources */,
 				C3D54AAC29B76EE30028F5FB /* TodoListRepositoryInjectable.swift in Sources */,
 				C3D54AAE29B76EE30028F5FB /* TodoListModule.swift in Sources */,
 				C3D54AA729B76EE30028F5FB /* TodoListRepositoryImplementation.swift in Sources */,
 				C3D54AA929B76EE30028F5FB /* Task.swift in Sources */,
 				C3D54AA529B76EE30028F5FB /* TodoListCacheImplementation.swift in Sources */,
+				C3D54AD829B9A7710028F5FB /* WeatherRepositoryImplementation.swift in Sources */,
+				C34B80B529B9DCB9009B8052 /* Wind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +536,7 @@
 			files = (
 				C3CEEAFC29B60B5D00E97A44 /* GenerateCuckooMocks.swift in Sources */,
 				C3BFC41429AD276B0071F73A /* TodoListAppTests.swift in Sources */,
+				C34B80B929BA0448009B8052 /* WeatherRepositoryTests.swift in Sources */,
 				C3D54A9029B76EB50028F5FB /* TodoListRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
