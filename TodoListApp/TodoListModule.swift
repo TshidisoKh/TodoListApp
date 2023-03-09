@@ -30,6 +30,13 @@ public class Injection {
             container.register(TodoListCache.self) { _ in
                 return TodoListCacheImplementation()
             }
+            container.register(WeatherRepository.self) { _ in
+                return WeatherRepositoryImplementation()
+            }
+            
+            container.register(WeatherService.self) { _ in
+                return WeatherServiceImplementation()
+            }
             
             return container
         }

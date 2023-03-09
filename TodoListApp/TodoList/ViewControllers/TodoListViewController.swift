@@ -22,6 +22,9 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         title = "Todo List"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+        var x = WeatherServiceImplementation().getWeather { apiData in
+            
+        }
     }
     
     @objc func didTapAdd() {

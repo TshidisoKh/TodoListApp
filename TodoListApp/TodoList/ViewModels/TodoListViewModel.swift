@@ -8,6 +8,12 @@ import Foundation
 
 class TodoListViewModel{
     @Injected internal var todoListRepository: TodoListRepository
+    @Injected internal var weatherRepository: WeatherRepository
+    
+    func getWeather(with location: String) -> WeatherDataModel{
+        return weatherRepository.getWeather(with: location)
+    }
+    
     func addTask(task: Task) {
         todoListRepository.addTask(task: task)
     }
