@@ -9,5 +9,5 @@ import Foundation
 struct Task: Equatable {
     let id: Int
     let name: String
-    let date: Date
+    let description: String
 }

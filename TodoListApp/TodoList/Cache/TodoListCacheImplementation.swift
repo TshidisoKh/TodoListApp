@@ -14,7 +14,7 @@ class TodoListCacheImplementation: TodoListCache {
     }
 
     func deleteTask(id: Int) {
-        let task = taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", date: Date())
+        let task = taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", description: "")
         if let index = taskList.firstIndex(of: task) {
             taskList.remove(at: index)
         }
@@ -22,14 +22,14 @@ class TodoListCacheImplementation: TodoListCache {
     }
 
     func editTask(id: Int) {
-        let task = taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", date: Date())
+        let task = taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", description: "")
         if let index = taskList.firstIndex(of: task) {
             taskList.remove(at: index)
         }
     }
 
     func fetchTask(id: Int) -> Task {
-        return taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", date: Date())
+        return taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", description: "")
     }
 
     func fetchTasks() -> [Task] {

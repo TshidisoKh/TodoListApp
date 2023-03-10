@@ -8,13 +8,11 @@
 import Foundation
 
 struct Main: Decodable {
-    let humidity: Int
-        let pressure: Int
-        let temp: Double
-        let tempMax: Int
-        let tempMin: Int
-    let feels_like: String
-    let visibility: Int
-        
+    let temp: Double
+    let  feels_like: Double
+    let  temp_min: Double
+    let  temp_max: Double
+    let  pressure: Int
+    let  humidity: Int
 }
 

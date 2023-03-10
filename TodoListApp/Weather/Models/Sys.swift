@@ -8,12 +8,9 @@
 import Foundation
 
 struct Sys: Decodable {
-    let country: String
-    let id: Int
-    let sunrise: UInt64
-    let sunset: UInt64
-    let timezone: UInt64
     let type: Int
-    let name: String
-    let cod: Int
+    let   id: Int
+    let   country: String
+    let   sunrise: Int64
+    let   sunset: Int64
 }

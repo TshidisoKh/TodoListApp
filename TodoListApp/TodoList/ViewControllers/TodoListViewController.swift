@@ -17,13 +17,12 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         tableView.delegate = self
         tableView.dataSource = self
         title = "Todo List"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
-        var x = WeatherServiceImplementation().getWeather { apiData in
-            
+        WeatherRepositoryImplementation().getWeather { m in
+            print(m)
         }
     }
     
@@ -35,7 +34,7 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
         let saveAction = UIAlertAction(title: "Save", style: UIAlertAction.Style.default, handler: { alert -> Void in
                 let firstTextField = alertController.textFields![0] as UITextField
                 let secondTextField = alertController.textFields![1] as UITextField
-            let task = Task(id: 8, name: firstTextField.text ?? "hhhh", date: Date())
+            let task = Task(id: 8, name: firstTextField.text ?? "", description: secondTextField.text ?? "")
             self.viewModel.addTask(task: task)
             self.tableView.reloadData()
             })
@@ -58,14 +57,21 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
     
     @objc(tableView:cellForRowAtIndexPath:) func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)! as UITableViewCell
+        let cell:CustomTaskTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CustomTaskTableViewCell
         let list = self.viewModel.fetchTasks()
-        cell.textLabel?.text = viewModel.fetchTasks()[indexPath.row].name
+        cell.name.text = list[indexPath.row].name
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let destination = storyboard.instantiateViewController(withIdentifier: "TaskDetailsViewController") as! TaskDetailsViewController
+        let list = self.viewModel.fetchTasks()
+        destination.taskName = list[indexPath.row].name
+        destination.taskDescription = list[indexPath.row].description
+        navigationController?.pushViewController(destination, animated: true)
+
     }
 }

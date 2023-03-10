@@ -8,7 +8,9 @@
 import UIKit
 
 class CustomTaskTableViewCell: UITableViewCell {
-
+    
+    let viewModel = TodoListViewModel()
+    @IBOutlet weak var name: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +20,12 @@ class CustomTaskTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func getWeather(sender: UIButton){
+        viewModel.getWeather {  [weak self] weather in
+            self?.name.text = String(weather.main.temp)
+        }
     }
 
 }

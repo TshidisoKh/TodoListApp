@@ -8,6 +8,5 @@
 import Foundation
 
 protocol WeatherRepository {
-    func getWeather(with location: String) -> WeatherDataModel
-    
+    func getWeather(completion: @escaping((WeatherDataModel) -> Void))    
 }
