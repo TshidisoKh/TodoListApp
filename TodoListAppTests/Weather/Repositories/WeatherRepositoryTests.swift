@@ -18,7 +18,7 @@ class WeatherRepositoryTests: XCTestCase {
     var systemUnderTest: WeatherRepository!
     
     private lazy var mockWeatherService: MockWeatherService = injectedMock(for: WeatherService.self)
-    
+    private lazy var mockWeatherRepository: MockWeatherRepository = injectedMock(for: WeatherRepository.self)
     
     override func setUp() {
         super.setUp()
@@ -56,7 +56,14 @@ class WeatherRepositoryTests: XCTestCase {
         stub(mockWeatherService) { mock in
             when(mock).getWeather(completion: any()).thenDoNothing()
         }
-        systemUnderTest.getWeather(with: "any()")
+        
+        stub(mockWeatherRepository) { mock in
+            when(mock).getWeather(completion: any()).thenDoNothing()
+        }
+        systemUnderTest.getWeather { weather in
+            
+        }
+        
         verify(mockWeatherService, times(1)).getWeather(completion: any())
     }
     

@@ -15,10 +15,8 @@ ${PODS_ROOT}/Cuckoo/run generate --testable "TodoListApp" \
  "$INPUT_DIR/$(find . -name TodoListCache.swift)"\
  "$INPUT_DIR/$(find . -name TodoListRepository.swift)"\
  "$INPUT_DIR/$(find . -name WeatherService.swift)"\
- "$INPUT_DIR/$(find . -name WeatherRepository.swift)"
-
- 
- 
-     
+ "$INPUT_DIR/$(find . -name WeatherRepository.swift)"\
+ "$INPUT_DIR/$(find . -name StocksService.swift)"\
+ "$INPUT_DIR/$(find . -name StocksRepository.swift)"
 
 echo "End GenerateWealthFeaturesCuckooMocks.sh"

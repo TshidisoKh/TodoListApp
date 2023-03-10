@@ -24,7 +24,13 @@ class TaskDetailsViewController: UIViewController {
     
     @IBAction func getWeather(sender: UIButton){
         viewModel.getWeather {  [weak self] weather in
-            self?.weatherLabel.text = String(weather.main.temp)
+            self?.weatherLabel.text = "Weather is \(weather.main.temp)"
+        }
+    }
+    
+    @IBAction func getStocks(sender: UIButton){
+        viewModel.getStock {  [weak self] stock in
+            self?.stockLabel.text = "Apple stock $\(stock.data.first(where: {$0.name == "Apple Inc"})?.price ?? 0)"
         }
     }
 }
