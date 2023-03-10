@@ -10,8 +10,10 @@ class TodoListViewModel{
     @Injected internal var todoListRepository: TodoListRepository
     @Injected internal var weatherRepository: WeatherRepository
     
-    func getWeather(with location: String) -> WeatherDataModel{
-        return weatherRepository.getWeather(with: location)
+    func getWeather(completion: @escaping((WeatherDataModel) -> Void)){
+        return weatherRepository.getWeather { weather in
+            completion(weather)
+        }
     }
     
     func addTask(task: Task) {

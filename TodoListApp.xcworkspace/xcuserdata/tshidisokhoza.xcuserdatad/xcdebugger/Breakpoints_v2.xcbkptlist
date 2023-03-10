@@ -3,4 +3,70 @@
    uuid = "48A36B79-2433-4D6A-A32A-108E5A0C00AA"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF926BAC-40CE-4B85-99A0-B68B2BA46DF7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TodoListApp/Weather/Services/WeatherServiceImplementation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getWeather(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D7374EC-9EF3-4671-88BF-2091AA34B065"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TodoListApp/Weather/Repository/WeatherRepositoryImplementation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "getWeather(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9D7374EC-9EF3-4671-88BF-2091AA34B065 - 77130ca0fe7705dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TodoListApp.WeatherRepositoryImplementation.getWeather(completion: (TodoListApp.WeatherDataModel) -&gt; ()) -&gt; ()"
+                  moduleName = "TodoListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tshidisokhoza/Desktop/TodoListApp/TodoListApp/Weather/Repository/WeatherRepositoryImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "9D7374EC-9EF3-4671-88BF-2091AA34B065 - 29b445d01388bdc5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TodoListApp.WeatherDataModel) -&gt; () in TodoListApp.WeatherRepositoryImplementation.getWeather(completion: (TodoListApp.WeatherDataModel) -&gt; ()) -&gt; ()"
+                  moduleName = "TodoListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tshidisokhoza/Desktop/TodoListApp/TodoListApp/Weather/Repository/WeatherRepositoryImplementation.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

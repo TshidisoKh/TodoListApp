@@ -54,7 +54,7 @@ class TodoListRepositoryTests: XCTestCase {
         stub(mockTodoListCache) { mock in
             when(mock).addTask(task: any()).thenDoNothing()
         }
-        systemUnderTest.addTask(task: Task(id: 0, name: "", date: Date()))
+        systemUnderTest.addTask(task: Task(id: 0, name: "", description: ""))
         verify(mockTodoListCache, times(1)).addTask(task: any())
     }
     
@@ -67,7 +67,7 @@ class TodoListRepositoryTests: XCTestCase {
     }
     
     func testFetchTaskSuccess() {
-        let expected = Task(id: 0, name: "", date: Date())
+        let expected = Task(id: 0, name: "", description: "")
         stub(mockTodoListCache) { mock in
             when(mock).fetchTask(id: any()).thenReturn(expected)
         }
