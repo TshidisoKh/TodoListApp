@@ -9,6 +9,14 @@ import Foundation
 class TodoListViewModel{
     @Injected internal var todoListRepository: TodoListRepository
     @Injected internal var weatherRepository: WeatherRepository
+    @Injected internal var stocksRepository: StocksRepository
+
+    
+    func getStock(completion: @escaping((DataRes) -> Void)){
+        return stocksRepository.getStocks { stock in
+            completion(stock)
+        }
+    }
     
     func getWeather(completion: @escaping((WeatherDataModel) -> Void)){
         return weatherRepository.getWeather { weather in

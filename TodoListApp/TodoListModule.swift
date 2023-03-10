@@ -27,15 +27,25 @@ public class Injection {
             container.register(TodoListRepository.self) { _ in
                 return TodoListRepositoryImplementation()
             }
+            
             container.register(TodoListCache.self) { _ in
                 return TodoListCacheImplementation()
             }
+            
             container.register(WeatherRepository.self) { _ in
                 return WeatherRepositoryImplementation()
             }
             
             container.register(WeatherService.self) { _ in
                 return WeatherServiceImplementation()
+            }
+            
+            container.register(StocksService.self) { _ in
+                return StocksServiceImplementation()
+            }
+            
+            container.register(StocksRepository.self) { _ in
+                return StocksRepositoryImplementation()
             }
             
             return container

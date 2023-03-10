@@ -1,24 +1,24 @@
 //
-//  WeatherServiceImplementation.swift
+//  StocksServiceImplementation.swift
 //  TodoListApp
 //
-//  Created by Tshidiso Khoza on 2023/03/09.
+//  Created by Tshidiso Khoza on 2023/03/10.
 //
 
 import Foundation
 import Alamofire
 
-class WeatherServiceImplementation: WeatherService {
-    var apiResult = [WeatherDataModel]()
-    func getWeather(completion: @escaping((WeatherDataModel) -> Void)) {
-        let url = "http://api.openweathermap.org/data/2.5/weather?q=Mumbai&units=metric&appid="
-
+class StocksServiceImplementation: StocksService {
+    
+    func getStocks(completion: @escaping((DataRes) -> Void)) {
+        let url = "https://api.stockdata.org/v1/data/quote?symbols=AAPL%2CTSLA%2CMSFT&api_token="
+        
         AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil)
             .response{ resp in
                 switch resp.result{
                 case .success(let data):
                     do{
-                      let jsonData = try JSONDecoder().decode(WeatherDataModel.self, from: data!)
+                        let jsonData = try JSONDecoder().decode(DataRes.self, from: data!)
                         completion(jsonData)
                         print(jsonData)
                     }
@@ -32,7 +32,3 @@ class WeatherServiceImplementation: WeatherService {
         
     }
 }
-
-
-
-

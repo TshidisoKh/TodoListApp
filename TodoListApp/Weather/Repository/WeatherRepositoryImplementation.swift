@@ -13,7 +13,7 @@ class  WeatherRepositoryImplementation: WeatherRepository {
     var weatherData = [WeatherDataModel]()
     
     func getWeather(completion: @escaping((WeatherDataModel) -> Void)){
-        WeatherServiceImplementation().getWeather { weather in
+        weatherService.getWeather { weather in
             completion(weather)
         }
     }

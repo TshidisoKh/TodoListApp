@@ -47,6 +47,11 @@
 		C3D54AD329B9A71B0028F5FB /* WeatherServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD229B9A71B0028F5FB /* WeatherServiceImplementation.swift */; };
 		C3D54AD629B9A74E0028F5FB /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD529B9A74E0028F5FB /* WeatherRepository.swift */; };
 		C3D54AD829B9A7710028F5FB /* WeatherRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */; };
+		C3F65EFA29BB545900C0A932 /* StocksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65EF929BB545900C0A932 /* StocksService.swift */; };
+		C3F65EFE29BB5BEC00C0A932 /* StocksRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65EFD29BB5BEC00C0A932 /* StocksRepositoryTests.swift */; };
+		C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0029BB604C00C0A932 /* StocksRepository.swift */; };
+		C3F65F0329BB607600C0A932 /* StocksRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0229BB607600C0A932 /* StocksRepositoryImplementation.swift */; };
+		C3F65F0529BB609700C0A932 /* StocksServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0429BB609700C0A932 /* StocksServiceImplementation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +116,11 @@
 		C3D54AD229B9A71B0028F5FB /* WeatherServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceImplementation.swift; sourceTree = "<group>"; };
 		C3D54AD529B9A74E0028F5FB /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImplementation.swift; sourceTree = "<group>"; };
+		C3F65EF929BB545900C0A932 /* StocksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksService.swift; sourceTree = "<group>"; };
+		C3F65EFD29BB5BEC00C0A932 /* StocksRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepositoryTests.swift; sourceTree = "<group>"; };
+		C3F65F0029BB604C00C0A932 /* StocksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepository.swift; sourceTree = "<group>"; };
+		C3F65F0229BB607600C0A932 /* StocksRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepositoryImplementation.swift; sourceTree = "<group>"; };
+		C3F65F0429BB609700C0A932 /* StocksServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksServiceImplementation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,9 +196,8 @@
 		C3BFC3FB29AD27680071F73A /* TodoListApp */ = {
 			isa = PBXGroup;
 			children = (
-				C34B80BA29BA85F2009B8052 /* TODOListDesignDocument.docx */,
+				C3F65EF729BB542800C0A932 /* Stocks */,
 				C3D54A9129B76EE30028F5FB /* TodoList */,
-				C3D54AA329B76EE30028F5FB /* TodoListModule.swift */,
 				C3D5495729B6FCA90028F5FB /* Weather */,
 				C3BFC3FC29AD27680071F73A /* AppDelegate.swift */,
 				C3BFC3FE29AD27680071F73A /* SceneDelegate.swift */,
@@ -197,6 +206,8 @@
 				C3BFC40529AD276A0071F73A /* Assets.xcassets */,
 				C3BFC40729AD276B0071F73A /* LaunchScreen.storyboard */,
 				C3BFC40A29AD276B0071F73A /* Info.plist */,
+				C34B80BA29BA85F2009B8052 /* TODOListDesignDocument.docx */,
+				C3D54AA329B76EE30028F5FB /* TodoListModule.swift */,
 			);
 			path = TodoListApp;
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 		C3BFC41229AD276B0071F73A /* TodoListAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				C3F65EFB29BB5BB300C0A932 /* Stocks */,
 				C34B80B629BA03FF009B8052 /* Weather */,
 				C3D54A8D29B76EB50028F5FB /* TodoList */,
 				C3CEEAFB29B60B5D00E97A44 /* GenerateCuckooMocks.swift */,
@@ -354,6 +366,49 @@
 				C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		C3F65EF729BB542800C0A932 /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F65EFF29BB601200C0A932 /* Repositories */,
+				C3F65EF829BB543800C0A932 /* Sservices */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
+		C3F65EF829BB543800C0A932 /* Sservices */ = {
+			isa = PBXGroup;
+			children = (
+				C3F65EF929BB545900C0A932 /* StocksService.swift */,
+				C3F65F0429BB609700C0A932 /* StocksServiceImplementation.swift */,
+			);
+			path = Sservices;
+			sourceTree = "<group>";
+		};
+		C3F65EFB29BB5BB300C0A932 /* Stocks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F65EFC29BB5BC400C0A932 /* Repositories */,
+			);
+			path = Stocks;
+			sourceTree = "<group>";
+		};
+		C3F65EFC29BB5BC400C0A932 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C3F65EFD29BB5BEC00C0A932 /* StocksRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C3F65EFF29BB601200C0A932 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C3F65F0029BB604C00C0A932 /* StocksRepository.swift */,
+				C3F65F0229BB607600C0A932 /* StocksRepositoryImplementation.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,16 +573,19 @@
 				C3BFC40129AD27680071F73A /* ViewController.swift in Sources */,
 				C3D5498629B712BF0028F5FB /* Sys.swift in Sources */,
 				C3D54AA429B76EE30028F5FB /* TodoListViewModel.swift in Sources */,
+				C3F65F0329BB607600C0A932 /* StocksRepositoryImplementation.swift in Sources */,
 				C3D54AA829B76EE30028F5FB /* TodoListRepository.swift in Sources */,
 				C3D54AAA29B76EE30028F5FB /* TodoListViewController.swift in Sources */,
 				C3D5498029B712460028F5FB /* Clouds.swift in Sources */,
 				C3BFC3FD29AD27680071F73A /* AppDelegate.swift in Sources */,
 				C3D5495E29B70CC50028F5FB /* NetworkHelper.swift in Sources */,
+				C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */,
 				C3BFC3FF29AD27680071F73A /* SceneDelegate.swift in Sources */,
 				C3D5498829B712E60028F5FB /* Weather.swift in Sources */,
 				C3D54AA629B76EE30028F5FB /* TodoListCache.swift in Sources */,
 				C3D54AAB29B76EE30028F5FB /* TodoListCacheInjectable.swift in Sources */,
 				C3D5498229B712680028F5FB /* Coord.swift in Sources */,
+				C3F65EFA29BB545900C0A932 /* StocksService.swift in Sources */,
 				C34B80FF29BB01EA009B8052 /* CustomTaskTableViewCell.swift in Sources */,
 				C3D5498429B712930028F5FB /* Main.swift in Sources */,
 				C3D54AD629B9A74E0028F5FB /* WeatherRepository.swift in Sources */,
@@ -538,6 +596,7 @@
 				C3D54AA929B76EE30028F5FB /* Task.swift in Sources */,
 				C3D54AA529B76EE30028F5FB /* TodoListCacheImplementation.swift in Sources */,
 				C3D54AD829B9A7710028F5FB /* WeatherRepositoryImplementation.swift in Sources */,
+				C3F65F0529BB609700C0A932 /* StocksServiceImplementation.swift in Sources */,
 				C34B80B529B9DCB9009B8052 /* Wind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,6 +609,7 @@
 				C3BFC41429AD276B0071F73A /* TodoListAppTests.swift in Sources */,
 				C34B80B929BA0448009B8052 /* WeatherRepositoryTests.swift in Sources */,
 				C3D54A9029B76EB50028F5FB /* TodoListRepositoryTests.swift in Sources */,
+				C3F65EFE29BB5BEC00C0A932 /* StocksRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
