@@ -53,6 +53,11 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     @objc func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if viewModel.fetchTasks().count == 0 {
+                self.tableView.setEmptyMessage("Click the add button to add your first task")
+            } else {
+                self.tableView.restore()
+            }
         return viewModel.fetchTasks().count
     }
     
