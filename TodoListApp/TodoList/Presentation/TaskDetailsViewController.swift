@@ -22,15 +22,26 @@ class TaskDetailsViewController: UIViewController {
         descriptionLabel.text = taskDescription
     }
     
-    @IBAction func getWeather(sender: UIButton){
-        viewModel.getWeather {  [weak self] weather in
-            self?.weatherLabel.text = "Weather is \(weather.main.temp)"
+    @IBAction func getWeather(sender: UIButton) {
+        viewModel.getWeather {  [weak self] weather, error in
+            if let weather = weather {
+                self?.weatherLabel.text = "Weather is \(weather.main.temp)"
+            }
+            else {
+                self!.showToast(error)
+            }
+                
         }
     }
     
-    @IBAction func getStocks(sender: UIButton){
-        viewModel.getStock {  [weak self] stock in
-            self?.stockLabel.text = "Apple stock $\(stock.data.first(where: {$0.name == "Apple Inc"})?.price ?? 0)"
+    @IBAction func getStocks(sender: UIButton) {
+        viewModel.getStock {  [weak self] (stock, error) in
+            if let stock = stock {
+                self?.stockLabel.text = "Apple stock $\(stock.data.first(where: {$0.name == "Apple Inc"})?.price ?? 0)"
+            }
+            else {
+                self!.showToast(error)
+            }
         }
     }
 }

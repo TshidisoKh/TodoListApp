@@ -52,6 +52,7 @@
 		C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0029BB604C00C0A932 /* StocksRepository.swift */; };
 		C3F65F0329BB607600C0A932 /* StocksRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0229BB607600C0A932 /* StocksRepositoryImplementation.swift */; };
 		C3F65F0529BB609700C0A932 /* StocksServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0429BB609700C0A932 /* StocksServiceImplementation.swift */; };
+		C3FFB35F29C098110031A739 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB35E29C098110031A739 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		C3F65F0029BB604C00C0A932 /* StocksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepository.swift; sourceTree = "<group>"; };
 		C3F65F0229BB607600C0A932 /* StocksRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepositoryImplementation.swift; sourceTree = "<group>"; };
 		C3F65F0429BB609700C0A932 /* StocksServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksServiceImplementation.swift; sourceTree = "<group>"; };
+		C3FFB35E29C098110031A739 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		C3BFC3FB29AD27680071F73A /* TodoListApp */ = {
 			isa = PBXGroup;
 			children = (
+				C3FFB35C29C097DF0031A739 /* Utils */,
 				C3F65EF729BB542800C0A932 /* Stocks */,
 				C3D54A9129B76EE30028F5FB /* TodoList */,
 				C3D5495729B6FCA90028F5FB /* Weather */,
@@ -411,6 +414,22 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		C3FFB35C29C097DF0031A739 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C3FFB35D29C097ED0031A739 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C3FFB35D29C097ED0031A739 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3FFB35E29C098110031A739 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -597,6 +616,7 @@
 				C3D54AA529B76EE30028F5FB /* TodoListCacheImplementation.swift in Sources */,
 				C3D54AD829B9A7710028F5FB /* WeatherRepositoryImplementation.swift in Sources */,
 				C3F65F0529BB609700C0A932 /* StocksServiceImplementation.swift in Sources */,
+				C3FFB35F29C098110031A739 /* Extensions.swift in Sources */,
 				C34B80B529B9DCB9009B8052 /* Wind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
