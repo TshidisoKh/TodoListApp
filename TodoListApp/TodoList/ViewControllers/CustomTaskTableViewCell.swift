@@ -7,15 +7,22 @@
 
 import UIKit
 
+protocol DeleteTaskCellDelegate: AnyObject {
+    func didTap()
+}
+
+
 class CustomTaskTableViewCell: UITableViewCell {
     
+    weak var delegate: DeleteTaskCellDelegate?
+    var nameText: String = ""
     let viewModel = TodoListViewModel()
     @IBOutlet weak var name: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -23,9 +30,9 @@ class CustomTaskTableViewCell: UITableViewCell {
     }
     
     @IBAction func getWeather(sender: UIButton){
-        viewModel.getWeather {  [weak self] weather in
-            self?.name.text = String(weather.main.temp)
-        }
+        print("lllllllll \(nameText)")
+        viewModel.deleteTask(name: nameText)
+        delegate?.didTap()
     }
 
 }

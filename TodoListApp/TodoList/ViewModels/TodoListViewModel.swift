@@ -28,16 +28,12 @@ class TodoListViewModel{
         todoListRepository.addTask(task: task)
     }
 
-    func deleteTask(id: Int) {
-        todoListRepository.deleteTask(id: id)
+    func deleteTask(name: String) {
+        todoListRepository.deleteTask(name: name)
     }
 
-    func editTask(id: Int) {
-        todoListRepository.editTask(id: id)
-    }
-
-    func fetchTask(id: Int) -> Task {
-        return todoListRepository.fetchTask(id: id)
+    func fetchTask(name: String) -> Task {
+        return todoListRepository.fetchTask(name: name)
     }
 
     func fetchTasks() -> [Task] {
