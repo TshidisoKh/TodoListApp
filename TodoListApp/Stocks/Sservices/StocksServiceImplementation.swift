@@ -10,7 +10,7 @@ import Alamofire
 
 class StocksServiceImplementation: StocksService {
     
-    func getStocks(completion: @escaping((DataRes) -> Void)) {
+    func getStocks(completion: @escaping((DataRes?, _ error: String) -> Void)) {
         let url = "https://api.stockdata.org/v1/data/quote?symbols=AAPL%2CTSLA%2CMSFT&api_token="
         
         AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil)
@@ -19,13 +19,16 @@ class StocksServiceImplementation: StocksService {
                 case .success(let data):
                     do{
                         let jsonData = try JSONDecoder().decode(DataRes.self, from: data!)
-                        completion(jsonData)
+                        completion(jsonData, "")
                         print(jsonData)
                     }
                     catch {
+                        completion(nil , String(error.localizedDescription))
                         print(error.localizedDescription)
                     }
                 case .failure(let error):
+                    completion(nil , String(error.localizedDescription))
+
                     print(error.localizedDescription)
                 }
             }

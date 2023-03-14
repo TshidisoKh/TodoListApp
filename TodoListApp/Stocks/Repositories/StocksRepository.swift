@@ -8,5 +8,5 @@
 import Foundation
 
 protocol StocksRepository {
-        func getStocks(completion: @escaping((DataRes) -> Void))
+    func getStocks(completion: @escaping((DataRes?, _ error:String) -> Void))
 }

@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 protocol StocksService {
-        func getStocks(completion: @escaping((DataRes) -> Void))
+        func getStocks(completion: @escaping((DataRes?, _ error: String) -> Void))
 }
 
  struct DataRes: Decodable {

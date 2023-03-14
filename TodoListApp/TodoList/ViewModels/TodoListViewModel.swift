@@ -12,15 +12,15 @@ class TodoListViewModel{
     @Injected internal var stocksRepository: StocksRepository
 
     
-    func getStock(completion: @escaping((DataRes) -> Void)){
-        return stocksRepository.getStocks { stock in
-            completion(stock)
+    func getStock(completion: @escaping((DataRes?, _ error: String) -> Void)){
+        return stocksRepository.getStocks { (stock, error) in
+            completion(stock, error)
         }
     }
     
-    func getWeather(completion: @escaping((WeatherDataModel) -> Void)){
-        return weatherRepository.getWeather { weather in
-            completion(weather)
+    func getWeather(completion: @escaping((WeatherDataModel?, _ error: String) -> Void)){
+        return weatherRepository.getWeather { (weather, error) in
+            completion(weather, error)
         }
     }
     

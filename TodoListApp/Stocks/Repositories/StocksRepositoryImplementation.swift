@@ -10,9 +10,9 @@ import Foundation
 class StocksRepositoryImplementation: StocksRepository {
     
     @Injected internal var stocksService: StocksService
-    func getStocks(completion: @escaping ((DataRes) -> Void)) {
-        stocksService.getStocks { stock in
-            completion(stock)
+    func getStocks(completion: @escaping ((DataRes?, _ error: String) -> Void)) {
+        stocksService.getStocks { (stock, error) in
+            completion(stock, error)
         }
     }
 }
