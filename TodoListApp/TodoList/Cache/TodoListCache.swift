@@ -8,8 +8,7 @@ import Foundation
 
 protocol TodoListCache {
     func addTask(task: Task)
-    func deleteTask(id: Int)
-    func editTask(id: Int)
-    func fetchTask(id: Int) -> Task
+    func deleteTask(name: String)
+    func fetchTask(name: String) -> Task
     func fetchTasks() -> [Task]
 }

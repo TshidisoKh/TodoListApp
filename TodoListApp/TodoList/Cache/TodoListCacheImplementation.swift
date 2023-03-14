@@ -7,33 +7,26 @@
 import Foundation
 
 class TodoListCacheImplementation: TodoListCache {
-    var taskList: [Task] = []
+    static var taskList: [Task] = []
 
     func addTask(task: Task) {
-        taskList.append(task)
+        TodoListCacheImplementation.taskList.append(task)
     }
 
-    func deleteTask(id: Int) {
-        let task = taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", description: "")
-        if let index = taskList.firstIndex(of: task) {
-            taskList.remove(at: index)
+    func deleteTask(name: String) {
+        let task = TodoListCacheImplementation.taskList.first(where: {$0.name == name}) ?? Task(name: "", description: "")
+        if let index = TodoListCacheImplementation.taskList.firstIndex(of: task) {
+            TodoListCacheImplementation.taskList.remove(at: index)
         }
         
     }
 
-    func editTask(id: Int) {
-        let task = taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", description: "")
-        if let index = taskList.firstIndex(of: task) {
-            taskList.remove(at: index)
-        }
-    }
-
-    func fetchTask(id: Int) -> Task {
-        return taskList.first(where: {$0.id == id}) ?? Task(id: 0, name: "", description: "")
+    func fetchTask(name: String) -> Task {
+        return TodoListCacheImplementation.taskList.first(where: {$0.name == name}) ?? Task(name: "", description: "")
     }
 
     func fetchTasks() -> [Task] {
-        return self.taskList
+        return TodoListCacheImplementation.taskList
     }
 
 

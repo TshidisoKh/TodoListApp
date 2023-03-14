@@ -7,7 +7,6 @@
 import Foundation
 
 struct Task: Equatable {
-    let id: Int
     let name: String
     let description: String
 }

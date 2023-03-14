@@ -6,11 +6,15 @@
 //
 import UIKit
 
-class TodoListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TodoListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DeleteTaskCellDelegate {
+    func didTap() {
+        tableView.reloadData()
+    }
+    
     
     @IBOutlet var tableView: UITableView!
     
-    
+     lazy var name: String = ""
     let viewModel = TodoListViewModel()
     let cellReuseIdentifier = "cell"
     
@@ -31,7 +35,7 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
         let saveAction = UIAlertAction(title: "Save", style: UIAlertAction.Style.default, handler: { alert -> Void in
                 let firstTextField = alertController.textFields![0] as UITextField
                 let secondTextField = alertController.textFields![1] as UITextField
-            let task = Task(id: 8, name: firstTextField.text ?? "", description: secondTextField.text ?? "")
+            let task = Task(name: firstTextField.text ?? "", description: secondTextField.text ?? "")
             self.viewModel.addTask(task: task)
             self.tableView.reloadData()
             })
@@ -57,6 +61,8 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
         let cell:CustomTaskTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CustomTaskTableViewCell
         let list = self.viewModel.fetchTasks()
         cell.name.text = list[indexPath.row].name
+        cell.nameText = list[indexPath.row].name
+        cell.delegate = self
         
         return cell
     }

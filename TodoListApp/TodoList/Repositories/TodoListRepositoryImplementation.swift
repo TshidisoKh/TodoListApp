@@ -6,23 +6,19 @@
 //
 import Foundation
 
-class TodoListRepositoryImplementation: TodoListRepository, TodoListCacheInjectable {
+class TodoListRepositoryImplementation: TodoListRepository {
     
     @Injected internal var todoListCache: TodoListCache
     func addTask(task: Task) {
         todoListCache.addTask(task: task)
     }
 
-    func deleteTask(id: Int) {
-        todoListCache.deleteTask(id: id)
+    func deleteTask(name: String) {
+        todoListCache.deleteTask(name: name)
     }
 
-    func editTask(id: Int) {
-        todoListCache.editTask(id: id)
-    }
-
-    func fetchTask(id: Int) -> Task {
-        return todoListCache.fetchTask(id: id)
+    func fetchTask(name: String) -> Task {
+        return todoListCache.fetchTask(name: name)
     }
 
     func fetchTasks() -> [Task] {
