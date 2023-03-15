@@ -11,7 +11,6 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.reloadData()
     }
     
-    
     @IBOutlet var tableView: UITableView!
     
      lazy var name: String = ""
@@ -52,7 +51,7 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
         }
     
     
-    @objc func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if viewModel.fetchTasks().count == 0 {
                 self.tableView.setEmptyMessage("Click the add button to add your first task")
             } else {
@@ -61,7 +60,7 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
         return viewModel.fetchTasks().count
     }
     
-    @objc(tableView:cellForRowAtIndexPath:) func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell:CustomTaskTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! CustomTaskTableViewCell
         let list = self.viewModel.fetchTasks()
@@ -73,7 +72,6 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destination = storyboard.instantiateViewController(withIdentifier: "TaskDetailsViewController") as! TaskDetailsViewController
         let list = self.viewModel.fetchTasks()
@@ -83,3 +81,4 @@ class TodoListViewController: UIViewController, UITableViewDelegate, UITableView
 
     }
 }
+
