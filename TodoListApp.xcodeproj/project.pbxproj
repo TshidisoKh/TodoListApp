@@ -52,6 +52,7 @@
 		C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0029BB604C00C0A932 /* StocksRepository.swift */; };
 		C3F65F0329BB607600C0A932 /* StocksRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0229BB607600C0A932 /* StocksRepositoryImplementation.swift */; };
 		C3F65F0529BB609700C0A932 /* StocksServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0429BB609700C0A932 /* StocksServiceImplementation.swift */; };
+		C3FEFBBF29C1F91C000FA3DC /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FEFBBE29C1F91C000FA3DC /* BorderButton.swift */; };
 		C3FFB35F29C098110031A739 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FFB35E29C098110031A739 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		C3F65F0029BB604C00C0A932 /* StocksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepository.swift; sourceTree = "<group>"; };
 		C3F65F0229BB607600C0A932 /* StocksRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepositoryImplementation.swift; sourceTree = "<group>"; };
 		C3F65F0429BB609700C0A932 /* StocksServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksServiceImplementation.swift; sourceTree = "<group>"; };
+		C3FEFBBE29C1F91C000FA3DC /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		C3FFB35E29C098110031A739 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,6 +283,7 @@
 		C3D54A9129B76EE30028F5FB /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				C3FEFBBD29C1F908000FA3DC /* Views */,
 				C3D54A9229B76EE30028F5FB /* ViewModels */,
 				C3D54A9429B76EE30028F5FB /* Cache */,
 				C3D54A9729B76EE30028F5FB /* Repositories */,
@@ -412,6 +415,14 @@
 				C3F65F0229BB607600C0A932 /* StocksRepositoryImplementation.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C3FEFBBD29C1F908000FA3DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3FEFBBE29C1F91C000FA3DC /* BorderButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C3FFB35C29C097DF0031A739 /* Utils */ = {
@@ -598,6 +609,7 @@
 				C3D5498029B712460028F5FB /* Clouds.swift in Sources */,
 				C3BFC3FD29AD27680071F73A /* AppDelegate.swift in Sources */,
 				C3D5495E29B70CC50028F5FB /* NetworkHelper.swift in Sources */,
+				C3FEFBBF29C1F91C000FA3DC /* BorderButton.swift in Sources */,
 				C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */,
 				C3BFC3FF29AD27680071F73A /* SceneDelegate.swift in Sources */,
 				C3D5498829B712E60028F5FB /* Weather.swift in Sources */,
