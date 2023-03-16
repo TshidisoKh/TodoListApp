@@ -9,9 +9,9 @@ import Foundation
 import Alamofire
 
 class WeatherServiceImplementation: WeatherService {
-    var apiResult = [WeatherDataModel]()
+    @Injected internal var properties: Properties
     func getWeather(completion: @escaping((WeatherDataModel?, _ error: String) -> Void)) {
-        let url = "http://api.openweathermap.org/data/2.5/weather?q=Mumbai&units=metric&appid="
+        let url = "http://api.openweathermap.org/data/2.5/weather?q=Mumbai&units=metric&appid=\(properties.getWeatherKey())"
 
         AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil)
             .response{ resp in

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 class BorderButton: UIButton {
 
     required init?(coder aDecoder: NSCoder) {

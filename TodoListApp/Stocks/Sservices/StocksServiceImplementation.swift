@@ -10,8 +10,9 @@ import Alamofire
 
 class StocksServiceImplementation: StocksService {
     
+    @Injected internal var properties: Properties
     func getStocks(completion: @escaping((DataRes?, _ error: String) -> Void)) {
-        let url = "https://api.stockdata.org/v1/data/quote?symbols=AAPL%2CTSLA%2CMSFT&api_token="
+        let url = "https://api.stockdata.org/v1/data/quote?symbols=AAPL%2CTSLA%2CMSFT&api_token=\(properties.getStockKey())"
         
         AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil)
             .response{ resp in
@@ -35,3 +36,4 @@ class StocksServiceImplementation: StocksService {
         
     }
 }
+
