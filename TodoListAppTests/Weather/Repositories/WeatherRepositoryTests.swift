@@ -60,8 +60,23 @@ class WeatherRepositoryTests: XCTestCase {
         stub(mockWeatherRepository) { mock in
             when(mock).getWeather(completion: any()).thenDoNothing()
         }
-        systemUnderTest.getWeather { weather in
-            
+        systemUnderTest.getWeather { weather,error  in
+            XCTAssert(weather?.weather.count == 0)
+        }
+        
+        verify(mockWeatherService, times(1)).getWeather(completion: any())
+    }
+    
+    func testGetWeatherFailure() {
+        stub(mockWeatherService) { mock in
+            when(mock).getWeather(completion: any()).thenDoNothing()
+        }
+        
+        stub(mockWeatherRepository) { mock in
+            when(mock).getWeather(completion: any()).thenDoNothing()
+        }
+        systemUnderTest.getWeather { weather,error  in
+            XCTFail(error)
         }
         
         verify(mockWeatherService, times(1)).getWeather(completion: any())

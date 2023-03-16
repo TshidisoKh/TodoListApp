@@ -54,26 +54,26 @@ class TodoListRepositoryTests: XCTestCase {
         stub(mockTodoListCache) { mock in
             when(mock).addTask(task: any()).thenDoNothing()
         }
-        systemUnderTest.addTask(task: Task(id: 0, name: "", description: ""))
+        systemUnderTest.addTask(task: Task(name: "", description: ""))
         verify(mockTodoListCache, times(1)).addTask(task: any())
     }
     
     func testDeleteTaskSuccess() {
         stub(mockTodoListCache) { mock in
-            when(mock).deleteTask(id: any()).thenDoNothing()
+            when(mock).deleteTask(name: any()).thenDoNothing()
         }
-        systemUnderTest.deleteTask(id: 0)
-        verify(mockTodoListCache, times(1)).deleteTask(id: any())
+        systemUnderTest.deleteTask(name: "")
+        verify(mockTodoListCache, times(1)).deleteTask(name: any())
     }
     
     func testFetchTaskSuccess() {
-        let expected = Task(id: 0, name: "", description: "")
+        let expected = Task(name: "", description: "")
         stub(mockTodoListCache) { mock in
-            when(mock).fetchTask(id: any()).thenReturn(expected)
+            when(mock).fetchTask(name: any()).thenReturn(expected)
         }
-        let actual = systemUnderTest.fetchTask(id: 0)
-        XCTAssertEqual(actual.id, expected.id)
-        verify(mockTodoListCache, times(1)).fetchTask(id: any())
+        let actual = systemUnderTest.fetchTask(name: "")
+        XCTAssertEqual(actual.name, expected.name)
+        verify(mockTodoListCache, times(1)).fetchTask(name: any())
     }
     
     func testFetchTasksSuccess() {
