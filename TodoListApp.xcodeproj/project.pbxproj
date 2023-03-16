@@ -47,6 +47,8 @@
 		C3D54AD329B9A71B0028F5FB /* WeatherServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD229B9A71B0028F5FB /* WeatherServiceImplementation.swift */; };
 		C3D54AD629B9A74E0028F5FB /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD529B9A74E0028F5FB /* WeatherRepository.swift */; };
 		C3D54AD829B9A7710028F5FB /* WeatherRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */; };
+		C3F4BFFA29C3315800E52126 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4BFF929C3315800E52126 /* Properties.swift */; };
+		C3F4BFFC29C331E000E52126 /* PropertiesImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4BFFB29C331E000E52126 /* PropertiesImplementation.swift */; };
 		C3F65EFA29BB545900C0A932 /* StocksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65EF929BB545900C0A932 /* StocksService.swift */; };
 		C3F65EFE29BB5BEC00C0A932 /* StocksRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65EFD29BB5BEC00C0A932 /* StocksRepositoryTests.swift */; };
 		C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0029BB604C00C0A932 /* StocksRepository.swift */; };
@@ -118,6 +120,8 @@
 		C3D54AD229B9A71B0028F5FB /* WeatherServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceImplementation.swift; sourceTree = "<group>"; };
 		C3D54AD529B9A74E0028F5FB /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImplementation.swift; sourceTree = "<group>"; };
+		C3F4BFF929C3315800E52126 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		C3F4BFFB29C331E000E52126 /* PropertiesImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesImplementation.swift; sourceTree = "<group>"; };
 		C3F65EF929BB545900C0A932 /* StocksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksService.swift; sourceTree = "<group>"; };
 		C3F65EFD29BB5BEC00C0A932 /* StocksRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepositoryTests.swift; sourceTree = "<group>"; };
 		C3F65F0029BB604C00C0A932 /* StocksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepository.swift; sourceTree = "<group>"; };
@@ -334,6 +338,7 @@
 			children = (
 				C3D54A9D29B76EE30028F5FB /* TodoListViewController.swift */,
 				C34B80FE29BB01EA009B8052 /* CustomTaskTableViewCell.swift */,
+				C34B80DC29BADEC4009B8052 /* TaskDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -351,7 +356,6 @@
 			isa = PBXGroup;
 			children = (
 				C3D54AA229B76EE30028F5FB /* TodoList.storyboard */,
-				C34B80DC29BADEC4009B8052 /* TaskDetailsViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -429,6 +433,8 @@
 			isa = PBXGroup;
 			children = (
 				C3FFB35D29C097ED0031A739 /* Extensions */,
+				C3F4BFF929C3315800E52126 /* Properties.swift */,
+				C3F4BFFB29C331E000E52126 /* PropertiesImplementation.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -608,7 +614,9 @@
 				C3D54AAA29B76EE30028F5FB /* TodoListViewController.swift in Sources */,
 				C3D5498029B712460028F5FB /* Clouds.swift in Sources */,
 				C3BFC3FD29AD27680071F73A /* AppDelegate.swift in Sources */,
+				C3F4BFFC29C331E000E52126 /* PropertiesImplementation.swift in Sources */,
 				C3D5495E29B70CC50028F5FB /* NetworkHelper.swift in Sources */,
+				C3F4BFFA29C3315800E52126 /* Properties.swift in Sources */,
 				C3FEFBBF29C1F91C000FA3DC /* BorderButton.swift in Sources */,
 				C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */,
 				C3BFC3FF29AD27680071F73A /* SceneDelegate.swift in Sources */,

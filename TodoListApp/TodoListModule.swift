@@ -48,6 +48,10 @@ public class Injection {
                 return StocksRepositoryImplementation()
             }
             
+            container.register(Properties.self) { _ in
+                return PropertiesImplementation()
+            }
+            
             return container
         }
 }
