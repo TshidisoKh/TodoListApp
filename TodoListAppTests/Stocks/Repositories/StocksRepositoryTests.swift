@@ -60,11 +60,27 @@ class StocksRepositoryTests: XCTestCase {
         stub(mockStocksRepository) { mock in
             when(mock).getStocks(completion: any()).thenDoNothing()
         }
-        systemUnderTest.getStocks { stock in
-            
+        systemUnderTest.getStocks { stock,error  in
+            XCTAssert(stock?.data.count == 0)
         }
         
         verify(mockStocksService, times(1)).getStocks(completion: any())
     }
     
+    func testGetStocksFailure() {
+        stub(mockStocksService) { mock in
+            when(mock).getStocks(completion: any()).thenDoNothing()
+        }
+        
+        stub(mockStocksRepository) { mock in
+            when(mock).getStocks(completion: any()).thenDoNothing()
+        }
+        systemUnderTest.getStocks { stock,error  in
+            XCTFail(error)
+        }
+        
+        verify(mockStocksService, times(1)).getStocks(completion: any())
     }
+    
+    
+}

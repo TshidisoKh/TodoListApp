@@ -49,6 +49,9 @@
 		C3D54AD829B9A7710028F5FB /* WeatherRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */; };
 		C3F4BFFA29C3315800E52126 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4BFF929C3315800E52126 /* Properties.swift */; };
 		C3F4BFFC29C331E000E52126 /* PropertiesImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4BFFB29C331E000E52126 /* PropertiesImplementation.swift */; };
+		C3F4C01F29C3526800E52126 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4C01E29C3526800E52126 /* Meta.swift */; };
+		C3F4C02129C3527E00E52126 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4C02029C3527E00E52126 /* Data.swift */; };
+		C3F4C02329C3531A00E52126 /* StocksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F4C02229C3531A00E52126 /* StocksResponse.swift */; };
 		C3F65EFA29BB545900C0A932 /* StocksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65EF929BB545900C0A932 /* StocksService.swift */; };
 		C3F65EFE29BB5BEC00C0A932 /* StocksRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65EFD29BB5BEC00C0A932 /* StocksRepositoryTests.swift */; };
 		C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F65F0029BB604C00C0A932 /* StocksRepository.swift */; };
@@ -122,6 +125,9 @@
 		C3D54AD729B9A7710028F5FB /* WeatherRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepositoryImplementation.swift; sourceTree = "<group>"; };
 		C3F4BFF929C3315800E52126 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		C3F4BFFB29C331E000E52126 /* PropertiesImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesImplementation.swift; sourceTree = "<group>"; };
+		C3F4C01E29C3526800E52126 /* Meta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		C3F4C02029C3527E00E52126 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C3F4C02229C3531A00E52126 /* StocksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksResponse.swift; sourceTree = "<group>"; };
 		C3F65EF929BB545900C0A932 /* StocksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksService.swift; sourceTree = "<group>"; };
 		C3F65EFD29BB5BEC00C0A932 /* StocksRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepositoryTests.swift; sourceTree = "<group>"; };
 		C3F65F0029BB604C00C0A932 /* StocksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksRepository.swift; sourceTree = "<group>"; };
@@ -378,9 +384,20 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		C3F4C01D29C3524800E52126 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3F4C01E29C3526800E52126 /* Meta.swift */,
+				C3F4C02029C3527E00E52126 /* Data.swift */,
+				C3F4C02229C3531A00E52126 /* StocksResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C3F65EF729BB542800C0A932 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				C3F4C01D29C3524800E52126 /* Models */,
 				C3F65EFF29BB601200C0A932 /* Repositories */,
 				C3F65EF829BB543800C0A932 /* Sservices */,
 			);
@@ -616,6 +633,7 @@
 				C3BFC3FD29AD27680071F73A /* AppDelegate.swift in Sources */,
 				C3F4BFFC29C331E000E52126 /* PropertiesImplementation.swift in Sources */,
 				C3D5495E29B70CC50028F5FB /* NetworkHelper.swift in Sources */,
+				C3F4C02329C3531A00E52126 /* StocksResponse.swift in Sources */,
 				C3F4BFFA29C3315800E52126 /* Properties.swift in Sources */,
 				C3FEFBBF29C1F91C000FA3DC /* BorderButton.swift in Sources */,
 				C3F65F0129BB604C00C0A932 /* StocksRepository.swift in Sources */,
@@ -635,7 +653,9 @@
 				C3D54AA929B76EE30028F5FB /* Task.swift in Sources */,
 				C3D54AA529B76EE30028F5FB /* TodoListCacheImplementation.swift in Sources */,
 				C3D54AD829B9A7710028F5FB /* WeatherRepositoryImplementation.swift in Sources */,
+				C3F4C01F29C3526800E52126 /* Meta.swift in Sources */,
 				C3F65F0529BB609700C0A932 /* StocksServiceImplementation.swift in Sources */,
+				C3F4C02129C3527E00E52126 /* Data.swift in Sources */,
 				C3FFB35F29C098110031A739 /* Extensions.swift in Sources */,
 				C34B80B529B9DCB9009B8052 /* Wind.swift in Sources */,
 			);

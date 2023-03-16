@@ -12,7 +12,7 @@ class TodoListViewModel{
     @Injected internal var stocksRepository: StocksRepository
 
     
-    func getStock(completion: @escaping((DataRes?, _ error: String) -> Void)){
+    func getStock(completion: @escaping((StocksResponse?, _ error: String) -> Void)){
         return stocksRepository.getStocks { (stock, error) in
             completion(stock, error)
         }
